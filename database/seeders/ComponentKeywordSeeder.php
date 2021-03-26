@@ -27,5 +27,14 @@ class ComponentKeywordSeeder extends Seeder
             'component_id' => Component::where('name', 'Responsive Design Common Break Points')->value('id'),
             'word' => 'media'
         ]);
+
+        ComponentKeyword::create([
+            'component_id' => Component::where('name', 'Flex Playground')->value('id'),
+            'word' => 'flex'
+        ]);
+        ComponentKeyword::create([
+            'component_id' => Component::where('name', 'Flex Playground')->value('id'),
+            'word' => 'example'
+        ]);
     }
 }
